@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pics/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="h-full">
+    <div id="container" class="flex flex-col items-center w-full h-[100%]">
+      <div class="w-full h-[80px] flex justify-between items-center px-4 mt-2 mb-3">
+        <div class="ml-4">
+            <p id="time">Good morning👌</p>
+            <span id="username" class="font-bold">Ali shabani</span>
+            <a class="text-red-500 text-xs" href="/login">log out</a>
+        </div>
+        <div class="flex gap-3 mr-4">
+          <div><img src="./pics/ring.png" alt="ring"></div>
+          <div><img src="./pics/heart.png" alt="heart"></div>
+        </div>
+      </div>
+      <div class="h-[37px] w-[90%] relative mb-3 flex justify-center">
+        <div class="absolute top-2.5 left-3"><img src="./pics/magnify.png" alt="magnify"></div>
+        <input id="searchBar" class="w-full h-[40px] bg-slate-100 rounded-xl pl-9 " placeholder="Search"></input>
+      </div>
+      <div class="w-[100%]">
+        <div class="h-[35px] flex justify-between items-center px-4">
+            <p id="leftSpan" class="text-[20px] font-semibold">Most popular</p>
+            <p id="rightSpan" class="text-[16px] font-semibold">See all</p>
+        </div>
+        <div id="contb" class="h-[65px] flex justify-evenly items-center">
+          <section id="brandCont" class="w-full w- flex space-x-2 pt-5  overflow-x-auto scrollbar-hide pb-6">
+        
+          </section>
+        </div>
+      </div>
+      <div id="cont" class="w-full overflow-y-scroll">
+        <div id="cartContainer" class="w-full grid grid-cols-2 px-3 justify-items-center">
+        </div>
+        <div id="pagination" class="flex justify-center items-center mb-4 mt-1"></div>
+      </div>
+      <div id="action-bar" class="mt-auto"><img src="./pics/action-bar.svg" alt="action-bar"></div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+    <script defer type="module" src="/scripts/home.ts"></script>
+  </body>
+</html>

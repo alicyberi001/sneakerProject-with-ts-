@@ -1,0 +1,26 @@
+{
+  "name": "sneaker_ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.5",
+    "debounce": "^2.1.0",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.45",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "@types/toastify-js": "^1.12.3",
+    "toastify-js": "^1.12.0"
+  }
+}
